@@ -1,3 +1,10 @@
+class Seat {
+  String coach;
+  String seatNumber;
+
+  Seat(this.coach, this.seatNumber);
+}
+
 class Passenger {
   String name;
   double age;
