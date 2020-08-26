@@ -1,2 +1,1 @@
-export 'package:trains/src/names.dart';
-
+export 'trains/names.dart';

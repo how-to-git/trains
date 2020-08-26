@@ -1,24 +1,19 @@
-enum Direction{
-  North,
-  South,
-  East,
-  West
-}
+enum Direction { North, South, East, West }
 
-class Velocity{
+class Velocity {
   Direction direction = Direction.North;
-  double speed = 0; 
+  double speed = 0;
 }
 
-class Train{
+class Train {
   final String name;
-  Vector velocity;
-  
-  Train(this.name){
+  Velocity velocity;
+
+  Train(this.name) {
     velocity = Velocity();
   }
 
-  String toString(){
+  String toString() {
     return this.name;
   }
 }
