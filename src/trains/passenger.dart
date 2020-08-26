@@ -29,6 +29,6 @@ class Reservation {
 
   @override
   String toString() {
-    return "Reseravation #$id, ${data.length1}passenders.";
+    return "Reseravation #$id, ${data.length}passenders.";
   }
 }
