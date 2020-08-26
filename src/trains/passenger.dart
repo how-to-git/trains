@@ -16,3 +16,19 @@ class Passenger {
     return "$name: $age";
   }
 }
+
+class Reservation {
+  Reservation() : data = Map<Passenger, Seat>();
+
+  int id;
+  Map<Passenger, Seat> data;
+
+  addPassenger(Passenger passenger, Seat seat) {
+    if (!data.containsKey(passenger)) data[passenger] = seat;
+  }
+
+  @override
+  String toString() {
+    return "Reseravation #$id, ${data.length1}passenders.";
+  }
+}
